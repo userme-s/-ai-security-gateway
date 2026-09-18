@@ -11,7 +11,7 @@ from typing import Any
 
 
 def mock_llm_judge(agent_name: str, system_prompt: str, user_prompt: str, canned_response: dict[str, Any]) -> dict[str, Any]:
-    print(f"    [MOCK LLM CALL] {agent_name} agent -> (no real API call, $0 cost)")
+    print(f"    [MOCK LLM CALL] {agent_name} agent")
     print("        --- system prompt ---")
     for line in system_prompt.strip().splitlines():
         print(f"        | {line}")

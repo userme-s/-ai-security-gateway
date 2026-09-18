@@ -22,7 +22,7 @@ MODEL = os.environ.get("OLLAMA_MODEL", "llama3.2:1b")
 
 
 def judge(agent_name: str, system_prompt: str, user_prompt: str, canned_response: dict[str, Any]) -> dict[str, Any]:
-    print(f"    [OLLAMA CALL] {agent_name} agent -> model={MODEL} (local, $0 cost)")
+    print(f"    [OLLAMA CALL] {agent_name} agent -> model={MODEL}")
     payload = {
         "model": MODEL,
         "messages": [
